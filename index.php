@@ -2,10 +2,11 @@
 <html>
 <title>A Website</title>
 <body>
-    <form action="/form_processing" method="post">
+    <form action="/action_page.php" method="post">
         <label for="message">Enter your message:</label><br>
         <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
         <input type="submit" value="Send">
-    </form>
+    </form>    
+    <?php echo Hello world! ?>
 </body>
 </html>
