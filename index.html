@@ -2,7 +2,7 @@
 <html>
 <title>SycamoreStackExchange</title>
 <body>
-    <form action="https://raw.githubusercontent.com/J1234ames/sycamorestackexchange/refs/heads/main/process.php" method="post">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <label for="message">Enter your message:</label><br>
         <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
         <input type="submit" value="Send">
