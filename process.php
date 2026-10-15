@@ -2,7 +2,7 @@
 <html>
 <body>
 
-Your message: <?php echo $_POST["message"] ?>
+Your message: <?php echo $_POST["message"]; ?>
 
 </body>
 </html>
