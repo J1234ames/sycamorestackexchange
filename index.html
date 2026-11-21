@@ -2,10 +2,17 @@
 <html>
 <title>SycamoreStackExchange</title>
 <body>
-    <form action="/process.php" method="post">
-        <label for="message">Enter your message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="50"></textarea><br>
-        <input type="submit" value="Send">
-    </form>    
+<button id="counter">Click me</button>
+<p id="count">0</p>
+<script>
+    const counter = document.getElementById("counter");
+    const count = document.getElementById("count");
+    counter.addEventListener("click", increment);
+    count.innerHTML = localStorage.getItem("count");
+    function increment() {
+        count.innerHTML++; 
+        localStorage.setItem("count", count.innerHTML);
+    };
+</script>
 </body>
 </html>
